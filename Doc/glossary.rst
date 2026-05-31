@@ -579,6 +579,17 @@ Glossary
 
       See :ref:`finders-and-loaders` and :mod:`importlib` for much more detail.
 
+   flatmap
+      A :func:`map` that not only applies a specified function to the elements
+      of a list, but flattens the result; that is, the mapped function returns
+      a list of results and the flatmap merges all of the results into a single
+      (flat) list.  For example if we have a list of strings ``('abc', 'de')``
+      and we use a flatmap function to apply :func:`list` to it, the result
+      would be ``('a', 'b', 'c', 'd', 'e')``.  Python does not have a
+      ``flatmap`` *function*, but the same effect can be easily achieved using
+      a list comprehension: ``[*list(s) for s in strlist]``.  The `*`
+      operator does the flattening.
+
    floor division
       Mathematical division that rounds down to nearest integer.  The floor
       division operator is ``//``.  For example, the expression ``11 // 4``

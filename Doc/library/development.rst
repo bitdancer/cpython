@@ -22,4 +22,5 @@ The list of modules described in this chapter is:
    unittest.rst
    unittest.mock.rst
    unittest.mock-examples.rst
+   unittest.params.rst
    test.rst
